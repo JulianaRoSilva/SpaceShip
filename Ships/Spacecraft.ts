@@ -25,7 +25,7 @@ export abstract class SpaceCraft {
     }
     
     protected abstract showStatus(): void // método abstrado que será subcrito em cada classe
-
+    
 
 
 }
