@@ -9,6 +9,15 @@ class SpaceCraft {
     constructor(name) {
         this.name = name;
     }
+    getName() {
+        return this.name;
+    }
+    getfuel() {
+        return this.fuel;
+    }
+    gethealth() {
+        return this.health;
+    }
     refuel() {
         this.fuel = 100;
     }
