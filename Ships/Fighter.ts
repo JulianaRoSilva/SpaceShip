@@ -11,16 +11,12 @@ export class Fighter extends SpaceCraft implements CombatCanable {
     }
 
 
-    /**Verificar se a nave está operacional;
-    Calcular o dano;
-    Aplicar o dano ao alvo;
-    Retornar o dano causado. */
-
     atack(target: SpaceCraft): number {
         if (target.isOperational()) {
             const damage = this.weaponPower >= 50 ? 30 : this.weaponPower >= 30 ? 20 : 10
 
             target.takeDamage(damage);
+            console.log(`${this.name}`)
             return damage
 
         } else {

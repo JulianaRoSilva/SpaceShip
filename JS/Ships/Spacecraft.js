@@ -18,6 +18,9 @@ class SpaceCraft {
     gethealth() {
         return this.health;
     }
+    setFuel(val) {
+        this.fuel -= val;
+    }
     refuel() {
         this.fuel = 100;
     }

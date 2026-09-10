@@ -8,14 +8,11 @@ class Fighter extends Spacecraft_1.SpaceCraft {
         super(name);
         this.weaponPower = power;
     }
-    /**Verificar se a nave está operacional;
-    Calcular o dano;
-    Aplicar o dano ao alvo;
-    Retornar o dano causado. */
     atack(target) {
         if (target.isOperational()) {
             const damage = this.weaponPower >= 50 ? 30 : this.weaponPower >= 30 ? 20 : 10;
             target.takeDamage(damage);
+            console.log(`${this.name}`);
             return damage;
         }
         else {

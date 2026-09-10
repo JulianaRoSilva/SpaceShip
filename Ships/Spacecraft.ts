@@ -22,6 +22,10 @@ export abstract class SpaceCraft {
         return this.health
     }
 
+    public setFuel(val: number): void {
+        this.fuel -= val
+    }
+
     
     public refuel(): void {
         this.fuel = 100;
