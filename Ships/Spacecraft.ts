@@ -3,31 +3,28 @@ export abstract class SpaceCraft {
     protected id: number = 0;
     protected name: String;
     protected fuel: number = 0;
-    protected health: number;
+    protected health: number = 100;
     
     
-	constructor(name: string, health: number) {
+	constructor(name: string) {
         this.name = name
-        this.health = health
 	}
 
-    protected abstract showStatus(): void // método abstrado que será subcrito em cada classe
+    public abstract showStatus(): void // método abstrado que será subcrito em cada classe
     
-    protected refuel(): void {
+    public refuel(): void {
         this.fuel = 100;
     }
 
-    protected takeDamage(damage: number): void {
+    public takeDamage(damage: number): void {
         this.health - damage <= 0 ? this.health = 0 : this.health =- damage   
     }
     
-    protected repair(): void {
+    public repair(): void {
         this.health = 100;
     }
 
-    protected isOperational(): boolean {
+    public isOperational(): boolean {
         return this.health > 0 && this.fuel > 0 ? true : false; // ternário para retornar true ou false
     }
-    
-
 }

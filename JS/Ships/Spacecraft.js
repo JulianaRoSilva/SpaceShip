@@ -5,10 +5,9 @@ class SpaceCraft {
     id = 0;
     name;
     fuel = 0;
-    health;
-    constructor(name, health) {
+    health = 100;
+    constructor(name) {
         this.name = name;
-        this.health = health;
     }
     refuel() {
         this.fuel = 100;

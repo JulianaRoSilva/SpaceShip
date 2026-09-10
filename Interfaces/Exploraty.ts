@@ -1,8 +1,10 @@
+import { Planets } from "../Ships/Planets";
+
+
 export interface Exploraty {
 
-    // explorações q serão realizadas pelas classes posteriormente
-
-    explore(location: string): string; 
+    // recebe um ENUM do planeta para fazer a exploração
+    explore(location: Planets): string; 
     collectData(): string;
 
 
