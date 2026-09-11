@@ -1,5 +1,5 @@
 import { CargoCarrier } from "../Interfaces/CargoCarrier";
-import { SpaceCraft } from "./Spacecraft";
+import { SpaceCraft } from "./SpaceCraft";
 
 export class TransportShip extends SpaceCraft implements CargoCarrier {
 

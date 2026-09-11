@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TransportShip = void 0;
-const Spacecraft_1 = require("./Spacecraft");
-class TransportShip extends Spacecraft_1.SpaceCraft {
+const SpaceCraft_1 = require("./SpaceCraft");
+class TransportShip extends SpaceCraft_1.SpaceCraft {
     CargoMax = 50;
     CurrentCargo = 0;
     loadCargo(amount) {

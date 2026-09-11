@@ -1,6 +1,6 @@
 import { Exploraty } from "../Interfaces/Exploraty";
 import { earth, jupiter, mars, mercury, neptune, Planets, pluto, saturn, sedna, uranus, venus } from "../Support/Planets";
-import { SpaceCraft } from "./Spacecraft";
+import { SpaceCraft } from "./SpaceCraft";
 import { purple, red } from "../Support/Colors";
 import { clear, stop } from "../Support/stop";
 

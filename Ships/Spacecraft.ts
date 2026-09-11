@@ -2,7 +2,7 @@ export abstract class SpaceCraft {
 
     protected id: number = 0;
     protected name: string;
-    protected fuel: number = 0;
+    protected fuel: number = 100;
     protected health: number = 100;
     
     

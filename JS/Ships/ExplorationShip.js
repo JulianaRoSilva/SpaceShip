@@ -2,10 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ExplorationShip = void 0;
 const Planets_1 = require("../Support/Planets");
-const Spacecraft_1 = require("./Spacecraft");
+const SpaceCraft_1 = require("./SpaceCraft");
 const Colors_1 = require("../Support/Colors");
 const stop_1 = require("../Support/stop");
-class ExplorationShip extends Spacecraft_1.SpaceCraft {
+class ExplorationShip extends SpaceCraft_1.SpaceCraft {
     collectData() {
         return 'The scientific data were collected.';
     }

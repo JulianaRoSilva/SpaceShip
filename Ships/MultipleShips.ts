@@ -1,4 +1,4 @@
-import { SpaceCraft } from "./Spacecraft";
+import { SpaceCraft } from "./SpaceCraft";
 import { CombatCanable } from "../Interfaces/CombatCapable";
 import { CargoCarrier } from "../Interfaces/CargoCarrier";
 import { Exploraty } from "../Interfaces/Exploraty";
@@ -105,6 +105,9 @@ export class MultipleShip extends SpaceCraft implements CombatCanable, CargoCarr
     atack(target: SpaceCraft): number {
         if (target.isOperational()) {
             const damage = this.weaponPower >= 30 ? 15 : this.weaponPower >= 20 ? 10 : 5
+
+            console.log(`The ship ${this.name} dealt ${damage} damage in ${target.getName()}!`)
+            stop()
 
             target.takeDamage(damage);
             return damage

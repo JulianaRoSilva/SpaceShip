@@ -1,4 +1,4 @@
-import { SpaceCraft } from "../Ships/Spacecraft";
+import { SpaceCraft } from "../Ships/SpaceCraft";
 
 /**
  Interface que serve para implementar o método ataque naquelas naves em que irão atacar

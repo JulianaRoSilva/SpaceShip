@@ -4,7 +4,7 @@ exports.SpaceCraft = void 0;
 class SpaceCraft {
     id = 0;
     name;
-    fuel = 0;
+    fuel = 100;
     health = 100;
     constructor(name) {
         this.name = name;

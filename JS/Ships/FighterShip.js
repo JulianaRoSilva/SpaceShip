@@ -3,12 +3,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Fighter = void 0;
 const Colors_1 = require("../Support/Colors");
 const stop_1 = require("../Support/stop");
-const Spacecraft_1 = require("./Spacecraft");
-class Fighter extends Spacecraft_1.SpaceCraft {
+const SpaceCraft_1 = require("./SpaceCraft");
+class Fighter extends SpaceCraft_1.SpaceCraft {
     weaponPower;
     constructor(name, power) {
         super(name);
         this.weaponPower = power;
+    }
+    repair() {
+        this.health = 100;
     }
     atack(target) {
         if (target.isOperational()) {

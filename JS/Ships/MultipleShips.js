@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.MultipleShip = void 0;
-const Spacecraft_1 = require("./Spacecraft");
+const SpaceCraft_1 = require("./SpaceCraft");
 const Planets_1 = require("../Support/Planets");
 const Colors_1 = require("../Support/Colors");
 const stop_1 = require("../Support/stop");
-class MultipleShip extends Spacecraft_1.SpaceCraft {
+class MultipleShip extends SpaceCraft_1.SpaceCraft {
     CargoMax = 30; // capacidade maxima reduzida por ser multipla
     CurrentCargo = 0;
     weaponPower;
@@ -79,6 +79,8 @@ class MultipleShip extends Spacecraft_1.SpaceCraft {
     atack(target) {
         if (target.isOperational()) {
             const damage = this.weaponPower >= 30 ? 15 : this.weaponPower >= 20 ? 10 : 5;
+            console.log(`The ship ${this.name} dealt ${damage} damage in ${target.getName()}!`);
+            (0, stop_1.stop)();
             target.takeDamage(damage);
             return damage;
         }
